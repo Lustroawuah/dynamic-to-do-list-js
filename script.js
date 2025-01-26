@@ -19,11 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create a new li element
         const listItem = document.createElement('li');
         listItem.textContent = taskText; // Set the text content to the task text
+        listItem.classList.add('task-item'); // Add a class to the li element for styling
 
         // Create a new button element for removing the task
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove"; // Set button text
-        removeButton.className = 'remove-btn'; // Assign class name for styling
+        removeButton.classList.add('remove-btn'); // Assign class name for styling
 
         // Assign an onclick event to the remove button
         removeButton.onclick = function() {
